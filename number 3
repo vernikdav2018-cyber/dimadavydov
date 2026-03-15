@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char w1[] = "eat";
+    char w2[] = "tea";
+    char w3[] = "ate";
+    char w4[] = "tan";
+    char w5[] = "nat";
+    char w6[] = "bat";
+    
+    // Сортируем буквы в каждом слове вручную
+    // Сортируем "eat"
+    char s1[] = "eat";
+    if (s1[0] > s1[1]) { char t = s1[0]; s1[0] = s1[1]; s1[1] = t; }
+    if (s1[1] > s1[2]) { char t = s1[1]; s1[1] = s1[2]; s1[2] = t; }
+    if (s1[0] > s1[1]) { char t = s1[0]; s1[0] = s1[1]; s1[1] = t; }
+    
+    // Сортируем "tea"
+    char s2[] = "tea";
+    if (s2[0] > s2[1]) { char t = s2[0]; s2[0] = s2[1]; s2[1] = t; }
+    if (s2[1] > s2[2]) { char t = s2[1]; s2[1] = s2[2]; s2[2] = t; }
+    if (s2[0] > s2[1]) { char t = s2[0]; s2[0] = s2[1]; s2[1] = t; }
+    
+    // Сортируем "ate"
+    char s3[] = "ate";
+    if (s3[0] > s3[1]) { char t = s3[0]; s3[0] = s3[1]; s3[1] = t; }
+    if (s3[1] > s3[2]) { char t = s3[1]; s3[1] = s3[2]; s3[2] = t; }
+    if (s3[0] > s3[1]) { char t = s3[0]; s3[0] = s3[1]; s3[1] = t; }
+    
+    // Сортируем "tan"
+    char s4[] = "tan";
+    if (s4[0] > s4[1]) { char t = s4[0]; s4[0] = s4[1]; s4[1] = t; }
+    if (s4[1] > s4[2]) { char t = s4[1]; s4[1] = s4[2]; s4[2] = t; }
+    if (s4[0] > s4[1]) { char t = s4[0]; s4[0] = s4[1]; s4[1] = t; }
+    
+    // Сортируем "nat"
+    char s5[] = "nat";
+    if (s5[0] > s5[1]) { char t = s5[0]; s5[0] = s5[1]; s5[1] = t; }
+    if (s5[1] > s5[2]) { char t = s5[1]; s5[1] = s5[2]; s5[2] = t; }
+    if (s5[0] > s5[1]) { char t = s5[0]; s5[0] = s5[1]; s5[1] = t; }
+    
+    // Сортируем "bat"
+    char s6[] = "bat";
+    if (s6[0] > s6[1]) { char t = s6[0]; s6[0] = s6[1]; s6[1] = t; }
+    if (s6[1] > s6[2]) { char t = s6[1]; s6[1] = s6[2]; s6[2] = t; }
+    if (s6[0] > s6[1]) { char t = s6[0]; s6[0] = s6[1]; s6[1] = t; }
+    
+    printf("Группа 1: %s", w1);
+    if (strcmp(s1, s2) == 0) printf(", %s", w2);
+    if (strcmp(s1, s3) == 0) printf(", %s", w3);
+    printf("\n");
+    
+    printf("Группа 2: %s", w4);
+    if (strcmp(s4, s5) == 0) printf(", %s", w5);
+    printf("\n");
+    
+    printf("Группа 3: %s", w6);
+    printf("\n");
+    
+    return 0;
+}
