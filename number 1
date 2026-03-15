@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("Введите число: ");
+    scanf("%d", &n);
+    
+    if (n <= 0) {
+        printf("Не является степенью 2, 3 или 4\n");
+        return 0;
+    }
+    
+    if ((n & (n - 1)) == 0) {
+        if (n == 1 || n == 4 || n == 16 || n == 64 || n == 256 || n == 1024)
+            printf("Степень 4\n");
+        else
+            printf("Степень 2\n");
+    }
+    else if (n == 3 || n == 9 || n == 27 || n == 81 || n == 243 || n == 729)
+        printf("Степень 3\n");
+    else
+        printf("Не является степенью 2, 3 или 4\n");
+    
+    return 0;
+}
